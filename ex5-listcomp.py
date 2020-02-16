@@ -8,11 +8,11 @@ def loverlap():
 loverlap()
 
 import random
-lenlis=random.randint(1,50)
+lenlis=random.randint(1,100)
 a=[]
 b=[]
 for i in range(1,lenlis):
-    a.append(random.randint(1,300))
-    b.append(random.randint(1,300))
+    a.append(random.randint(1,500))
+    b.append(random.randint(1,500))
 
 loverlap()
