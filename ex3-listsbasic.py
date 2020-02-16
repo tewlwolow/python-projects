@@ -26,6 +26,11 @@ useri()
 
 a.extend([34,546,98778,0,34,0,2313,-1])
 
+printer()
+newlister()
+newlister_cons()
+useri()
+
 
 
 
