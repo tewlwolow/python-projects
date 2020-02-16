@@ -1,11 +1,11 @@
-catNames = []
+catNames=[]
 while True:
-    print('Enter the name of cat ' + str(len(catNames) + 1) +
-      ' (Or enter nothing to stop.):')
-    name = input()
-    if name == '':
+    print("Enter the name of cat "+str(len(catNames)+1)+" (or enter nothing to stop and print the names.):")
+    name=input()
+    if name=="":
         break
-    catNames = catNames + [name]  # list concatenation
-print('The cat names are:')
+    catNames=catNames+[name]
+print("The cat names are:")
 for name in catNames:
-    print('  ' + name)
+    print("  "+name)
+print("And now cats in a box:",str(catNames)+"!")
