@@ -1,17 +1,16 @@
 import sys
 
-name=input("Skriv inn namnet ditt: ")
-age=int(input("Skriv inn alderen din (bruk tal, ikkje ord): "))
-years=int(input("Skriv inn eit anna tal: "))
-for i in range(0,years):
-    print(name+" skal vera 100 år gamal i",str(2020+(100-age))+"."+"\n")
+name=input("Write your name: ")
+age=int(input("Write your age (use numbers): "))
+for i in range(0,age):
+    print(name+" will turn 100 in",str(2020+(100-age))+"."+"\n")
     
 while True:
-    terminal=input("Programmet har avslutta. Tast inn 'quit' og slå Enter for å slutte: ")
+    terminal=input("Programme has finished. Type 'quit' and hit Enter to exit: ")
     if terminal=="quit":
-        print("Sluttar.")
+        print("Finishing...")
         sys.exit()
     else:
-        print("Hæ?")
+        print("Error!")
 
 
