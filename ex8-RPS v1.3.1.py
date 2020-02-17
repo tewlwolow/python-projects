@@ -89,7 +89,7 @@ def compquick():
             print("Scissors beat paper! Computer won.")
             break
         if player_one=="scissors" and player_two=="rock":
-            print("Rock beats scissors! Compuyer won.")
+            print("Rock beats scissors! Computer won.")
             break
         if player_one=="scissors" and player_two=="paper":
             print("Scissors beat paper! You won.")
@@ -113,7 +113,7 @@ def compnormal():
         rc=1 # round counter
         plonesc=0 # player one score
         pltwosc=0 # player one score
-        print("If you want to finish and get results before completing all rounds, type 'Get results'.") # info about early results
+        print("If you want to finish and get results before completing all rounds, type 'get results'.") # info about early results
         while True:
             # player one loop + error catching
             if rc>usr_round_nmb:
@@ -183,7 +183,7 @@ def compnormal():
                 elif pltwosc>plonesc:
                     print("Tough luck! Computer won",str(pltwosc),"to",str(plonesc)+"!")
                 else:
-                    print ("You're both equally good. Draw!")
+                    print ("You're both equally skilled. Draw!")
                 break
                 
     compround() # begin round loops
@@ -204,7 +204,7 @@ def normal():
         rc=1 # round counter
         plonesc=0 # player one score
         pltwosc=0 # player one score
-        print("If you want to finish and get results before completing all rounds, type 'Get results'.") # info about early results
+        print("If you want to finish and get results before completing all rounds, type 'get results'.") # info about early results
         while True:
             # player one loop + error catching
             if rc>usr_round_nmb:
@@ -274,6 +274,7 @@ def normal():
                     break
                 return plonesc, pltwosc
                 
+                
             rc+=1 # increments round number
 
             # evaluate scores after all rounds
@@ -283,16 +284,16 @@ def normal():
                 elif pltwosc>plonesc:
                     print("Congratulations! Player two won",str(pltwosc),"to",str(plonesc)+"!")
                 else:
-                    print ("You're both equally good. Draw!")
+                    print ("You're both equally skilled. Draw!")
                 break
                 
     round() # begin round loops
-
-    
-# main game loop, programme starts here with Welcome screen
+     
+        
+# main game loop, the programme starts here with Welcome screen
 while True:
     try:   
-        choice=input("Welcome to the Rock Paper Scissors game. You can quit by typing 'Leave'. Choose mode: type 'quick match', 'normal game', 'computer quick match' and 'computer normal game': ")
+        choice=input("Welcome to the Rock Paper Scissors game. You can quit by typing 'leave'.\nChoose mode: type 'quick match', 'normal game', 'computer quick match' and 'computer normal game': ")
         if choice=="quick match" or choice=="Quick match":
             quick() # quick match launcher
             again=input("Do you want to play again (y/n)?") # quick match mode loops ends here, main game loop continues
@@ -320,7 +321,7 @@ while True:
             if again=="y": # y/n continue checker
                 continue # main loop again
             if again=="n": # leave main loop, go to exit
-                break
+                break            
     except:
         print("Please choose mode.") # error catching for wrong mode name input
         continue
