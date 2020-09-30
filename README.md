@@ -1,2 +1,2 @@
-# nauka
-my student files
+# python projects
+learning stuff
