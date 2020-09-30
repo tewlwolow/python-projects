@@ -1,6 +1,6 @@
 import sys
 
-print("Welcome to the Ultimate Palindrome Checker v 1.0.0. Type 'EXIT' to exit.")
+print("Welcome to the Ultimate Palindrome Checker v 1.0.1. Type 'EXIT' to exit.")
 
 while True:
     var = str(input("Please provide any word. Case doesn't matter: "))
