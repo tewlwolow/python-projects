@@ -4,8 +4,8 @@
 def array_to_string(array):
     try:
         if len(array)==1:
-            return array
+            return str(array[0])
         else:
-            return ('{}, and {}'.format(', '.join(map(str, array[:-1])), str(array[-1])))
+            return('{}, and {}'.format(', '.join(map(str, array[:-1])), str(array[-1])))
     except (IndexError):
-        print('Your list is empty.')
+        return('Your list is empty.')
