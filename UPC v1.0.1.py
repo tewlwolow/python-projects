@@ -1,5 +1,5 @@
 # simple programme to check if a string is a palindrome
-# includes check for case and removes spaces from input
+# includes check for case, removes spaces from input
 
 from sys import exit
 
