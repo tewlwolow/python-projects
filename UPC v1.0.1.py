@@ -7,7 +7,7 @@ from sys import exit
 print('Welcome to Ultimate Palindrome Checker v 1.5. Type \'EXIT\' to exit.')
 
 while True:
-    var = str(input('Please provide any word. Case doesn\'t matter: '))
+    var = str(input('Please provide any word(s). Case doesn\'t matter: '))
     var = var.replace(' ', '')
     if var == 'EXIT':
         exit()
