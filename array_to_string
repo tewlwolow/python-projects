@@ -1,0 +1,10 @@
+# simple function to convert list/tuple elements into a natural string (with Oxford comma)
+
+
+def array_to_string(array):
+    if array==[]:
+        return "!!! Your list is empty !!!"
+    elif len(array)==1:
+        return str(array[0])
+    else:
+        return ('{}, and {}'.format(', '.join(map(str, array[:-1])), str(array[-1])))
