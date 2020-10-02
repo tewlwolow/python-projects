@@ -1,12 +1,18 @@
-import sys
+# simple programme to check if a string is a palindrome
+# includes check for case and removes spaces from input
 
-print("Welcome to the Ultimate Palindrome Checker v 1.0.1. Type 'EXIT' to exit.")
+from sys import exit
+
+
+print('Welcome to Ultimate Palindrome Checker v 1.0.1. Type \'EXIT\' to exit.')
 
 while True:
-    var = str(input("Please provide any word. Case doesn't matter: "))
-    if var == "EXIT":
-        sys.exit()
-    elif var[::-1].lower() == var.lower():
-        print("The word provided is a palindrome.")
+    var = str(input('Please provide any word. Case doesn\'t matter: '))
+    var = var.replace(' ', '')
+    if var == 'EXIT':
+        exit()
+    var = var.lower()
+    if var[::-1] == var:
+        print('The word provided is a palindrome.')
     else:
-        print("The word provided is not a palindrome.")
+        print('The word provided is not a palindrome.')
