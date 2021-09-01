@@ -11,6 +11,7 @@ class Dog():
         print("Dog's name is " + self.name + ".")
         
     def showAge(self):
+        # Note the explicit conversion. I miss Lua.
         print("Dog's age is " + str(self.age) + ".")
         
     def showAttitude(self):
